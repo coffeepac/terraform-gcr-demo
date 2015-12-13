@@ -4,8 +4,8 @@ machine:
     - sudo unzip terraform.zip -d /usr/local/bin/
     - sudo curl https://s3-us-west-1.amazonaws.com/22acacia-deploy/custom-binaries/terraform-provider-googlecli -o /usr/local/bin/terraform-provider-googlecli
     - sudo chmod +x /usr/local/bin/terraform-provider-googlecli
-    - sudo gcloud components install kubectl -q
-    - sudo gcloud alpha -h < /bin/echo
+    - sudo /opt/google-cloud-sdk/bin/gcloud components install kubectl -q
+    - sudo /opt/google-cloud-sdk/bin/gcloud alpha -h < /bin/echo
     - sudo chown ubuntu:ubuntu -R ~/.config/
 
 deployment:
