@@ -46,7 +46,7 @@ output "ip" {
 
 resource "google_dns_record_set" "prodorc" {
     managed_zone = "dummy-22acacia"
-    name = "suckit.22acacia.xyz."
+    name = "suckit22.22acacia.xyz."
     type = "A"
     ttl = 300
     rrdatas = ["${googlecli_container_replica_controller.producer-orc.external_ip}"]
