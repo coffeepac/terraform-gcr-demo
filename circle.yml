@@ -1,6 +1,6 @@
 machine:
   post:
-    - ./configure_host.sh
+    - sudo /home/ubuntu/terraform-gcr-demo/configure_host.sh
 
 deployment:
   shitsnacks:
