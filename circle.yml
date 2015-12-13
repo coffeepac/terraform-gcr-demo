@@ -1,12 +1,6 @@
 machine:
   post:
-    - curl https://releases.hashicorp.com/terraform/0.6.8/terraform_0.6.8_linux_amd64.zip -o ~/terraform.zip
-    - sudo unzip terraform.zip -d /usr/local/bin/
-    - sudo curl https://s3-us-west-1.amazonaws.com/22acacia-deploy/custom-binaries/terraform-provider-googlecli -o /usr/local/bin/terraform-provider-googlecli
-    - sudo chmod +x /usr/local/bin/terraform-provider-googlecli
-    - sudo /opt/google-cloud-sdk/bin/gcloud components install kubectl -q
-    - sudo /opt/google-cloud-sdk/bin/gcloud alpha -h < /bin/echo
-    - sudo chown ubuntu:ubuntu -R ~/.config/
+    - ./configure_host.sh
 
 deployment:
   shitsnacks:
