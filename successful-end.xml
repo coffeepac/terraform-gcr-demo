@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+   <testsuite name="JUnitXmlReporter.constructor" errors="0" skipped="0" tests="1" failures="0" time="0.006">
+      <properties>
+         <property name="is.this.fake" value="Yes it is." />
+      </properties>
+      <testcase classname="22acacia.BuildSuccess" name="If we are writing this file the build was a success" time="0" />
+   </testsuite>
+</testsuites>

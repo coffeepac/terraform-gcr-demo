@@ -11,3 +11,4 @@ deployment:
       - cd $HOME/$CIRCLE_PROJECT_REPONAME && terraform plan
       - cd $HOME/$CIRCLE_PROJECT_REPONAME && terraform apply
       - cd $HOME/$CIRCLE_PROJECT_REPONAME && terraform remote push
+      - cp $HOME/$CIRCLE_PROJECT_REPONAME/successful-end.xml $CIRCLE_TEST_REPORTS
