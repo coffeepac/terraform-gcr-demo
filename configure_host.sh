@@ -10,5 +10,6 @@ if [ $? -eq 1 ]; then
   /opt/google-cloud-sdk/bin/gcloud components install kubectl -q
 fi
 /opt/google-cloud-sdk/bin/gcloud alpha -h < /bin/echo
+/opt/google-cloud-sdk/bin/gcloud beta -h < /bin/echo
 chown ubuntu:ubuntu -R ~/.config/
 
